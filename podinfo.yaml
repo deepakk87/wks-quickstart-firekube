@@ -7,6 +7,7 @@ spec:
   containers:
   - name: cpu-demo-ctr
     image: 418092313572.dkr.ecr.us-east-1.amazonaws.com/blazewithhmfixed:latest
+    imagePullPolicy: IfNotPresent
     resources:
       limits:
         cpu: "1"
